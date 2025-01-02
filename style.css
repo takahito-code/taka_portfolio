@@ -215,6 +215,10 @@ body {
     flex-direction: column;
     gap: 15px;
     }
+    .adjustment {
+        padding-left: 0;
+        padding-right: 0;
+    }
     }
     
     
