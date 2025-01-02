@@ -41,10 +41,10 @@ body {
     }
     
     header img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     }
     
     h1 {
@@ -55,10 +55,15 @@ body {
     margin-bottom: 10px;
     }
 
-     .intro {
+    .intro {
         padding-bottom: 20px;
     }
     
+    .adjustment {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     main {
     background-color: #2d82b7;
     color: #fff;
@@ -84,7 +89,7 @@ body {
     }
     
     section {
-    margin: 0;
+    margin: 20px 0;
     padding: 40px 20px;
     border-radius: 10px;
     color: #1f2937;
@@ -121,8 +126,21 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .project-container .project.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
     
+    .project:hover {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .project h3 {
     font-size: 1.2 rem;
     }
@@ -134,9 +152,9 @@ body {
     
     .project-image {
     border-radius: 10px;
-    width: 100%;
-    max-width: 150px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
     
     }
     
@@ -171,6 +189,18 @@ body {
     
     button:hover {
     background-color: #1e40af;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+    }
+    .social-icons a:hover {
+        color: #2563eb;
+        transform: scale(1.2);
     }
     
     @media (max-width: 600px) {
