@@ -45,6 +45,7 @@ body {
     height: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
+    margin-top: 10px;
     }
     
     h1 {
@@ -221,6 +222,70 @@ body {
     }
     }
     
-    
-    
-   
+    #certifications {
+        text-align: center;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      #certifications h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #1f2937;
+      }
+ 
+      .certificates {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 1opx;
+        margin-bottom: 40px;
+      }
+      
+      .certificates div {
+        display: flex;
+        flex-direction: column; 
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden; 
+        padding: 20px;
+        text-align: left; 
+        max-width: 600px; 
+      }
+      
+      .certificates img {
+        max-width: 70%; 
+        height: auto; 
+        border-radius: 8px;
+        margin-bottom: 10px; 
+      }
+      
+      #scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        background-color: #2563eb;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: none; /* 初期状態は非表示 */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      
+      #scrollToTop:hover {
+        background-color: #1e40af;
+        transform: scale(1.1); /* ホバー時の拡大 */
+      }
+      
