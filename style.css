@@ -245,17 +245,7 @@ body {
         margin-bottom: 40px;
       }
       
-      .certificates div {
-        display: flex;
-        flex-direction: column; 
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden; 
-        padding: 20px;
-        text-align: left; 
-        max-width: 600px; 
-      }
+      
       
       .certificates img {
         max-width: 70%; 
@@ -289,3 +279,4 @@ body {
         transform: scale(1.1); /* ホバー時の拡大 */
       }
       
+    
